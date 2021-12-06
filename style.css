@@ -28,7 +28,7 @@
 :root {
 	--iceberg: #D6EBE4;
 	--coral: #F18B62;
-	--navy: #0A043C;
+	--navy: #213053;
 	--mustard: #FFCD28;
 	--mint: #20BFA9;
 	--icewhite: #F9FAFB;
@@ -38,14 +38,17 @@
 	--bubblegum: #F86C9C;
 	--brown: #270000;
 	--skyblue: #1787FC;
-	--orange: #FF794D;
+	--orange: #F18B62;
 	--iceacle: #EBF5FF;
 	--blackboard: #2E2E36;
 	--coolgrey: #7F828A;
 	--greycloud: #DFDFDF;
 	--palepink: #FFF8F8;
 	--offwhite: #F5F5F5;
-	--red: #F8574C;	
+	--red: #F8574C;
+	--midnight: #1D263A;
+	--white:  #FFFFFF;
+	--navybutton: #0A043C;
 }
 
 
@@ -86,9 +89,33 @@ a {
 	color: var(--navy);
 	font-size: 24px;
 	font-weight: 700;
+	padding-right: 56px;
 }
 
 .hero__dot {
 	color: var(--coral);
-	margin-left: -6px;
+}
+
+.hero__head {
+	display: flex;
+}
+
+.hero__link {
+	color: var(--midnight);
+	font-size: 17px;
+	font-weight: 600;
+	padding: 20px;
+}
+
+.hero__link.hero__link--right {
+	padding-left: 300px;
+}
+
+
+.hero__button {
+	color: var(--white);
+	border-radius: 10px;
+	background: var(--navybutton);
+	padding: 16px 32px 14px 31px; 
+	
 }
