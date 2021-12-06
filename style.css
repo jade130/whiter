@@ -1,3 +1,21 @@
+@font-face {
+	font-family: 'Mazzard';
+	font-weight: 400;
+	src: url('./fonts/mazzard-h-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Mazzard';
+	font-weight: 600;
+	src: url('./fonts/mazzard-h-semibold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Mazzard';
+	font-weight: 700;
+	src: url('./fonts/mazzard-h-bold.woff2') format('woff2');
+}
+
 body {
-	font-family: sans-serif;
+	font-family: 'Mazzard', sans-serif;
 }
