@@ -146,8 +146,7 @@ a {
 }
 
 .hero__photo {
-	position: absolute;
-	width: 100%;
+	position: relative;
 }
 
 .hero__form {
