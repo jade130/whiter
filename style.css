@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: 'Mazzard';
-	font-weight: 600;
+	font-weight: 600; c 
 	src: url('./fonts/mazzard-h-semibold.woff2') format('woff2');
 }
 
@@ -49,6 +49,7 @@
 	--midnight: #1D263A;
 	--white:  #FFFFFF;
 	--navybutton: #0A043C;
+	--linegrey: #1D263A;
 }
 
 
@@ -98,6 +99,8 @@ a {
 
 .hero__head {
 	display: flex;
+	border-bottom: 1px solid grey;
+	padding-bottom: 27px;
 }
 
 .hero__nav {
