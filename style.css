@@ -101,7 +101,6 @@ a {
 	display: flex;
 	border-bottom: 1px solid grey;
 	padding-bottom: 27px;
-	position: absolute;
 }
 
 .hero__nav {
@@ -163,11 +162,17 @@ a {
 }
 
 .hero__input {
-	display: inline-block;
+	display: block;
+	width: 250px;
+}
+
+.hero__label {
+	padding-top: 7px;
+	float: inline-start;
 }
 
 .hero__button.hero__button--second {
-	margin-left: 28px;
+	float: inline-end;
 	margin-top: 3px;
 }
 
