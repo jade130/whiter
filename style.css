@@ -101,6 +101,7 @@ a {
 	display: flex;
 	border-bottom: 1px solid grey;
 	padding-bottom: 27px;
+	position: absolute;
 }
 
 .hero__nav {
