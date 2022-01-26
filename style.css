@@ -49,7 +49,7 @@
 	--midnight: #1D263A;
 	--white:  #FFFFFF;
 	--navybutton: #0A043C;
-	--linegrey: #1D263A;
+	--lightgrey: #1D263A;
 }
 
 
@@ -101,9 +101,15 @@ a {
 
 .hero__head {
 	display: flex;
-	border-bottom: 1px solid grey;
-	padding-bottom: 27px;
+	border-bottom: 1px solid var(--lightgrey);
+	padding-bottom: 20px;
 	position: absolute;
+}
+
+@media(max-width: 640px) {
+	.hero__head {
+		position: relative;
+	}
 }
 
 .hero__nav {
