@@ -87,6 +87,11 @@ a {
 	height: 924px;
 }
 
+@media(max-width: 640px) {
+	.hero {
+		width: auto;
+	}
+}
 
 .hero__logo {
 	color: var(--navy);
@@ -146,7 +151,6 @@ a {
 	
 @media(max-width: 640px) {
 	.hero__icon {
-		display: block;
 		}
 }
 	
@@ -179,6 +183,7 @@ a {
 @media(max-width: 640px) {
 	.hero__subtitle {
 		font-size: 15px;
+		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
@@ -194,6 +199,12 @@ a {
 	position: absolute;
 	height: 90px;
 	width: 746px;
+}
+
+@media(max-width: 640px) {
+	.hero__form {
+		width: auto;
+	}
 }
 
 .hero__input {
