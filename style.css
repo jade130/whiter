@@ -151,6 +151,8 @@ a {
 	
 @media(max-width: 640px) {
 	.hero__icon {
+		display: block;
+		padding-left: 380px;
 		}
 }
 	
