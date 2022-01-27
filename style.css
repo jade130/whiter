@@ -222,9 +222,28 @@ a {
 	float: inline-start;
 }
 
+@media(max-width: 640px) {
+	.hero__label {
+		padding-top: 18px;
+	}
+}
+
+@media(max-width: 640px) {
+	.hero__label.hero__label {
+		padding-top: 29px;
+	}
+}
+
 .hero__button.hero__button--second {
 	float: inline-end;
 	margin-top: 3px;
+}
+
+@media(max-width: 640px) {
+	.hero__button.hero__button--second {
+		float: none;
+		margin-top: 26px;
+	}
 }
 
 .hero__body {
