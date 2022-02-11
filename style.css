@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: 'Mazzard';
-	font-weight: 600; c 
+	font-weight: 600;  
 	src: url('./fonts/mazzard-h-semibold.woff2') format('woff2');
 }
 
@@ -85,7 +85,9 @@ a {
 
 .hero {
 	background-color: var(--iceberg);
-	height: 924px;
+	display: flex;
+	height: 90vh;
+	max-height: 920px;
 }
 
 @media(max-width: 640px) {
@@ -98,7 +100,6 @@ a {
 	color: var(--navy);
 	font-size: 24px;
 	font-weight: 700;
-	padding-right: 56px;
 }
 
 .hero__dot {
@@ -106,10 +107,13 @@ a {
 }
 
 .hero__head {
-	display: flex;
-	border-bottom: 1px solid var(--lightgrey);
-	padding-bottom: 20px;
-	position: absolute;
+	align-items: centre
+	display: grid;
+	border-bottom: 1px solid #00000022;
+	gap: 50px;
+	padding: 27px 0;
+	z-index: 1;
+	grid-template-columns: auto minmax(0, 1fr);
 }
 
 @media(max-width: 640px) {
@@ -119,7 +123,9 @@ a {
 }
 
 .hero__nav {
-	padding-top: 5px;
+	align-items: centre;
+	display: flex;
+	gap: 40px;	
 }
 
 @media(max-width: 640px) { 
@@ -132,18 +138,19 @@ a {
 	color: var(--midnight);
 	font-size: 17px;
 	font-weight: 600;
-	padding-right: 40px;
 }
 
 .hero__link.hero__link--right {
-	padding-left: 300px;
+	margin-left: auto;
 }
 
 .hero__button {
 	color: var(--white);
 	border-radius: 10px;
 	background: var(--navybutton);
-	padding: 16px 32px 14px 31px; 
+	font-size: 17px;
+	font-weight: 500; 
+	padding: 17px 32px 16px 31px;
 }
 
 .hero__icon {
@@ -159,8 +166,10 @@ a {
 	
 .hero__title {
 	font-size: 80px;
-	max-width: 600px;
-	padding: 153px 0 19px 0;
+	font-weight: 600;
+	line-height: 1.1;
+	max-width: 500px;
+	margin: -5px 0 30px;
 }
 
 @media(max-width: 640px) {
@@ -179,7 +188,7 @@ a {
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 32px;
-	padding-bottom: 53px;
+	margin: 0 0 50px;
 	width: 500px;
 }
 
@@ -193,10 +202,6 @@ a {
 	}
 }
 
-.hero__photo {
-	
-}
-
 @media(max-width: 640px) {
 	.hero__photo {
 		display: none;
@@ -204,14 +209,13 @@ a {
 }
 
 .hero__form {
+	align-self: flex-start;
+	align-items: centre;
 	background-color: var(--white);
 	border-radius: 15px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-	bottom: 53%;
+	display: inline-flex;
 	padding: 15px 15px 15px 25px;
-	position: absolute;
-	height: 90px;
-	width: 746px;
 }
 
 @media(max-width: 640px) {
@@ -226,11 +230,6 @@ a {
 .hero__input {
 	display: block;
 	width: 250px;
-}
-
-.hero__label {
-	padding-top: 7px;
-	float: inline-start;
 }
 
 @media(max-width: 640px) {
@@ -257,8 +256,7 @@ a {
 }
 
 .hero__button.hero__button--second {
-	float: inline-end;
-	margin-top: 3px;
+	margin-left: 60px;
 }
 
 @media(max-width: 640px) {
@@ -270,13 +268,14 @@ a {
 
 .hero__body {
 	color: var(--midnight);
-	bottom: 47%;
 	font-size: 17px;
-	font-weight: 700;
+	font-weight: 500;
 	padding-top: 32px;
-	position: absolute;
 }
 
+.hero__content {
+	background-image: 
+}
 
 @media(max-width: 640px) {
 	.hero__body {
